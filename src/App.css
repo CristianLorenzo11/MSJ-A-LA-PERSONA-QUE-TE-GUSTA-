@@ -1,0 +1,202 @@
+body {
+  background-color: #f0f0f0; /* Color de fondo general */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #cc0000; /* Color de fondo del encabezado */
+  color: #ffffff; /* Color del texto del encabezado */
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  
+}
+
+footer {
+  background-color: #cc0000; /* Color de fondo del pie de página */
+  color: #ffffff; /* Color del texto del pie de página */
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo adicional para hacer que el texto sea más festivo */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #f8f6f6;
+}
+
+p {
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #f8f6f6;
+}
+
+/* Estilo adicional para el fondo navideño */
+body::before {
+  content: '';
+  background: url('navidad.jpg') center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.7; /* Ajusta la opacidad según tus preferencias */
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.christmas-tree {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid #228B22; /* Verde oscuro */
+  overflow: hidden;
+  transition: all 4s ease;
+}
+
+.christmas-tree::before,
+.christmas-tree::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.christmas-tree::before {
+  left: 0;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid #228B22; /* Verde oscuro */
+}
+
+.christmas-tree::after {
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 0 solid #228B22; /* Verde oscuro */
+}
+
+.adornos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.adorno {
+  position: absolute;
+  background-color: #d9534f; /* Rojo */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.adorno1 {
+  top: 20%;
+  left: 40%;
+}
+
+.adorno2 {
+  top: 40%;
+  left: 70%;
+}
+
+.adorno3 {
+  top: 60%;
+  left: 30%;
+}
+
+.adorno4 {
+  top: 80%;
+  left: 60%;
+}
+
+.star {
+  position: absolute;
+  top: -20px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid #ffd700; /* Amarillo dorado */
+}
+
+h2 {
+  font-size: 32px;
+  margin: 20px 0;
+  text-align: center;
+  color: #ff4500; /* Rojo anaranjado */
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.christmas-tree {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 200px solid #2ecc71; /* Verde */
+}
+
+.christmas-tree::before,
+.christmas-tree::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.christmas-tree::before {
+  left: -100px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 150px solid #2ecc71; /* Verde */
+}
+
+.christmas-tree::after {
+  left: -50px;
+  top: 150px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #2ecc71; /* Verde */
+}
+
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: center;
+  color: #e74c3c; /* Rojo */
+}
